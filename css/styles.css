@@ -1,0 +1,194 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: aliceblue;
+}
+
+/* Menu haut */
+.top-menu {
+  position: fixed;
+  background-color: #50727B;
+  color: #EEEDEB;
+  border: 1px solid #EEEDEB;
+  padding: 10px;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 999;
+}
+
+.top-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.top-menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.top-menu ul li:last-child {
+  margin-right: 0;
+}
+
+.top-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-menu ul li a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #EEEDEB;
+}
+
+/* Menu latéral */
+.sidebar {
+  position: fixed;
+  width: 20%; /* Largeur du menu latéral */
+  height: 100%; /* Hauteur égale à celle de la fenêtre */
+  background-color: #EEEDEB;
+  padding: 20px;
+  overflow-y: auto; /* Activer le défilement si le contenu dépasse */
+  float: left; /* Ajout pour aligner à gauche */
+  display: flex; /* Utilisation de flexbox */
+  flex-direction: column; /* Empile les éléments verticalement */
+  justify-content: center; /* Centrer verticalement */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  display: block;
+  text-decoration: none;
+  color: #2F4858;
+  padding: 10px; /* Ajouter un peu d'espace autour du texte */
+}
+
+.sidebar ul li a:hover {
+  color: #2F4858;
+  font-weight: bold;
+}
+
+/* corps et contenu de la page */
+.corps {
+  padding: 20px;
+  margin-left: 25%;
+  width: calc(80% - 80px);
+  height: auto;
+  background-color: #2F4858;
+  color: #EEEDEB;
+  float: right; /* Ajout pour aligner à droite */
+  margin-top: 30px;
+}
+
+.contenu {
+  height: 100vh; /* Occupera toute la hauteur de la page */
+  margin-bottom: 5px;
+  top: -50px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  grid-auto-rows: 6% 10% 1fr;
+}
+
+/* contenu des sections */
+.titre-competences { /* Titre de la section l 1 c 1 2*/
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+
+.div-resume-competences { /* Résumé des compétences l 2 c 1 2*/
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.div-resume-competences p{
+  text-align: justify;
+  padding: 10px;
+}
+
+
+.container-gauche { /* Conteneur des compétences l3 c 1*/
+  grid-column: 1;
+  grid-row: 3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.div-presentation {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.div-presentation .liste-competences {
+  margin: 0 auto; /* Centre la liste horizontalement */
+  text-align: left; /* Rétablit l'alignement à gauche pour les éléments de la liste */
+}
+.sous-titre-competences {
+
+}
+.liste-competences {
+
+}
+
+.div-contexte {
+}
+.div-contexte div{
+  display: flex;
+  flex-wrap: wrap;
+}
+.div-contexte img{
+  width: 30%;
+  height: 50%;
+}
+
+
+.container-droit { /* Conteneur des compétences l3 c 2*/
+  grid-column: 2;
+  grid-row: 3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.div-illustration {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.div-illustration img{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* border: #000 1px solid; */
+
+.separator {
+  width: 100%; /* Assure que la barre de séparation occupe toute la largeur */
+  height: 2px; /* Hauteur de la barre de séparation */
+  background-color: #EEEDEB; /* Couleur de la barre de séparation */
+}
