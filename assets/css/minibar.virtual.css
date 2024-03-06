@@ -549,13 +549,12 @@
 
 .vg-contact-form {
     margin: 0 auto;
-    position: center;
     padding: 30px 0;
     max-width: 400px;
 }
 
 .vg-contact-form .form-control {
-    margin: 8px 0;
+    margin: auto;
 }
 
 
