@@ -551,10 +551,12 @@
     margin: 0 auto;
     padding: 30px 0;
     max-width: 400px;
+    border-color: #ff0000 solid 2px;
 }
 
 .vg-contact-form .form-control {
-    margin: auto;
+    margin: 8px 0;
+    border-color: #000000 solid 2px;
 }
 
 
