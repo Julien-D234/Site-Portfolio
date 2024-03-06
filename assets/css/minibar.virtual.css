@@ -548,7 +548,8 @@
 }
 
 .vg-contact-form {
-    margin: auto;
+    margin: 0 auto;
+    position: center;
     padding: 30px 0;
     max-width: 400px;
 }
