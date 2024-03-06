@@ -390,7 +390,7 @@
 .page-about .img-place {
     margin: 16px auto;
     width: 250px;
-    height: 300px;
+    height: 250px;
     border-radius: 50%;
 }
 
@@ -548,7 +548,7 @@
 }
 
 .vg-contact-form {
-    margin: 0 auto;
+    margin: auto;
     padding: 30px 0;
     max-width: 400px;
 }
